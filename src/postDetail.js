@@ -7,11 +7,11 @@ class PostDetail extends Component {
         <img className="avatar"></img>
         <p>
           <strong>
-            {this.props.user}
+            {this.props.data.user}
           </strong>
         </p>
         <p>
-          time
+          {this.props.data.postTime}
         </p>
       </div>
     );

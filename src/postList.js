@@ -6,7 +6,7 @@ class PostList extends Component {
     return(
       this.props.masseges.map(
         ele => {
-          return <Post data={ele} />
+          return <Post data={ele} addLike={this.props.updateParentState}/>
         }
       )
     );
