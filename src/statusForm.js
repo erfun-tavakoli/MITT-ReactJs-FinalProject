@@ -7,22 +7,11 @@ class StatusForm extends Component {
     super(props);
     this.state = {
       currentUser: 'erfun',
-      masseges: [],
     }
   }
 
-  addPost = (value) => {
-    const newMasseges = [...this.state.masseges];
-    newMasseges.unshift(
-      {
-        user: this.state.currentUser,
-        text: value,
-      }
-    );
-
-    this.setState({
-      masseges: newMasseges,
-    });
+  addPostData = (value) => {
+    this.props.updateParentState(value, this.state.currentUser)
   }
 
   chnageUser = (user) => {
@@ -32,11 +21,10 @@ class StatusForm extends Component {
   };
 
   render() {
-    console.log(this.state.masseges)
     return(
       <div className="form">
         <FormHeader updateUser={this.chnageUser}/>
-        <TextInput addPost={this.addPost}/>
+        <TextInput addPost={this.addPostData}/>
       </div>
     );
   }
