@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import PostDetail from './postDetail';
 import PostMassege from './postMassege';
+import PostReply from './postReply';
 
 class Post extends Component {
-  handleClick = (e) => {
+  addLike = () => {
     this.props.addLike(this.props.data.id);
-    e.preventDefault();
+  }
+
+  commentSwitch = () => {
+    this.props.commentSwitch(this.props.data.id);
+  }
+
+  addComment = (commentText) => {
+    this.props.addComment(this.props.data.id, commentText)
   }
 
   render() {
@@ -13,9 +21,7 @@ class Post extends Component {
       <div className="post">
         <PostDetail data={this.props.data}/>
         <PostMassege text={this.props.data.text}/>
-        <button onClick={this.handleClick}>
-          {this.props.data.totalLikes}
-        </button>
+        <PostReply data={this.props.data} addLike={this.addLike} commentSwitch={this.commentSwitch} addComment={this.addComment} likeComment={this.props.likeComment}/>
       </div>
     );
   }

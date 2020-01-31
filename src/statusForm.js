@@ -3,15 +3,8 @@ import FormHeader from './formHeader';
 import TextInput from './textInput';
 
 class StatusForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentUser: 'erfun',
-    }
-  }
-
   addPostData = (value) => {
-    this.props.updateParentState(value, this.state.currentUser)
+    this.props.updateParentState(value)
   }
 
   chnageUser = (user) => {
@@ -23,7 +16,7 @@ class StatusForm extends Component {
   render() {
     return(
       <div className="form">
-        <FormHeader updateUser={this.chnageUser}/>
+        <FormHeader updateUser={this.chnageUser} chnageActiveUser={this.props.chnageActiveUser}/>
         <TextInput addPost={this.addPostData}/>
       </div>
     );

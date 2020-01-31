@@ -1,0 +1,23 @@
+.nav-bar {
+    background-color: pink; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.select-user {
+  width: fit-content;
+}
+
+.nav-bar h1 {
+  width: fit-content;
+}
+
+.post {
+  background-color: rgb(204, 176, 230);
+}
+
+.comment {
+  background-color: powderblue;
+}

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 class SelectUser extends Component {
   handleChange = (event) => {
-    this.props.changeUser(event.target.value);
+    this.props.chnageActiveUser(event.target.value);
   }
 
   render() {
     return (
-      <form>
+      <form className="select-user">
         <select onChange={this.handleChange}>
-          <option value="erfun">Erfun</option>
+          <option value="erfun" selected>Erfun</option>
           <option value="shola">Shola</option>
           <option value="dragon">Dragon</option>
           <option value="dolphin">Dolphin</option>
