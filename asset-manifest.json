@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/facepook/static/css/main.9f551171.chunk.css",
+    "main.js": "/facepook/static/js/main.755a452e.chunk.js",
+    "main.js.map": "/facepook/static/js/main.755a452e.chunk.js.map",
+    "runtime-main.js": "/facepook/static/js/runtime-main.b7d3707e.js",
+    "runtime-main.js.map": "/facepook/static/js/runtime-main.b7d3707e.js.map",
+    "static/js/2.9241846a.chunk.js": "/facepook/static/js/2.9241846a.chunk.js",
+    "static/js/2.9241846a.chunk.js.map": "/facepook/static/js/2.9241846a.chunk.js.map",
+    "index.html": "/facepook/index.html",
+    "precache-manifest.2857e7e31de468646a4049145398a60a.js": "/facepook/precache-manifest.2857e7e31de468646a4049145398a60a.js",
+    "service-worker.js": "/facepook/service-worker.js",
+    "static/css/main.9f551171.chunk.css.map": "/facepook/static/css/main.9f551171.chunk.css.map",
+    "static/js/2.9241846a.chunk.js.LICENSE": "/facepook/static/js/2.9241846a.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7d3707e.js",
+    "static/js/2.9241846a.chunk.js",
+    "static/css/main.9f551171.chunk.css",
+    "static/js/main.755a452e.chunk.js"
+  ]
+}
