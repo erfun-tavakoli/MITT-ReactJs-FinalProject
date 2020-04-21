@@ -23,7 +23,8 @@ class TextInput extends Component {
   render() {
     return(
       <form onSubmit={this.handleSubmit} className="status-form">
-        <input type="text" onChange={this.handleChange} value={this.state.value}></input>
+        <label>Status</label>
+        <input type="text" onChange={this.handleChange} value={this.state.value} placeholder="Write something ..."></input>
         <button>Submit</button>
       </form>
     );

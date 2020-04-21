@@ -1,9 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 .nav-bar {
     background-color: pink; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
+}
+
+#root {
+  max-width: 900px;
+  width: 85%;
+  margin: auto;
 }
 
 .select-user {
@@ -20,4 +30,9 @@
 
 .comment {
   background-color: powderblue;
+}
+
+.status-form input{
+  height: 150px;
+  width: 100%;
 }
